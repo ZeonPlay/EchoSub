@@ -190,7 +190,7 @@ function convertASS(assText) {
           if (!(moveKey in windowPositions)) windowPositions[moveKey] = wpId++;
           wpIdx = windowPositions[moveKey];
         }
-        // Tag experimental
+        // Tag experimental dan animasi
         if (seg.tags.includes('ytchroma')) {
           // Bagi durasi segmen menjadi N bagian, tiap bagian warna berbeda
           const N = chromaColors.length;
@@ -231,6 +231,70 @@ function convertASS(assText) {
               penIdx,
               wsIdx,
               wpIdx: shakeWpIdx,
+              karaoke: false
+            });
+          }
+        } else if (/\\t\([^)]*\\1c&H[0-9A-Fa-f]{6}&[^)]*\)/.test(seg.tags)) {
+          // Animasi warna dengan \t(0,2000,\1c&Hxxxxxx&)
+          // Ambil warna awal dan akhir
+          const colorStart = style.primaryColour;
+          const tMatch = seg.tags.match(/\\t\((\d*),(\d*),\\1c&H([0-9A-Fa-f]{6})&\)/);
+          let tStart = 0, tEnd = segDur * 1000, colorEnd = colorStart;
+          if (tMatch) {
+            tStart = parseInt(tMatch[1]||'0');
+            tEnd = parseInt(tMatch[2]||Math.round(segDur*1000));
+            colorEnd = `#${tMatch[3].substring(4,6)}${tMatch[3].substring(2,4)}${tMatch[3].substring(0,2)}`;
+          }
+          const N = 12;
+          const animDur = (tEnd-tStart)/N;
+          for (let i = 0; i < N; i++) {
+            const t = i/(N-1);
+            const color = interpolateColor(colorStart, colorEnd, t);
+            const animPenKey = `${style.fontname}|${style.fontsize}|${color}|${style.bold}|${style.italic}|${style.underline}`;
+            if (!(animPenKey in pens)) pens[animPenKey] = penId++;
+            const animPenIdx = pens[animPenKey];
+            dialogues.push({
+              start: (segStart + (tStart/1000) + (i*animDur)/1000).toFixed(3),
+              dur: (animDur/1000).toFixed(3),
+              text: seg.text,
+              style,
+              penIdx: animPenIdx,
+              wsIdx,
+              wpIdx,
+              karaoke: false
+            });
+          }
+        } else if (/\\t\([^)]*\\fs\d+[^)]*\)/.test(seg.tags)) {
+          // Animasi font size dengan \t(\fsNN)
+          // Ambil font size awal dan akhir
+          const sizeStart = style.fontsize;
+          const tMatch = seg.tags.match(/\\t\((\d*),(\d*),\\fs(\d+)\)/);
+          let tStart = 0, tEnd = segDur * 1000, sizeEnd = sizeStart;
+          if (tMatch) {
+            tStart = parseInt(tMatch[1]||'0');
+            tEnd = parseInt(tMatch[2]||Math.round(segDur*1000));
+            sizeEnd = parseInt(tMatch[3]);
+          } else {
+            // fallback: \t(\fsNN)
+            const tMatch2 = seg.tags.match(/\\t\(\\fs(\d+)\)/);
+            if (tMatch2) sizeEnd = parseInt(tMatch2[1]);
+          }
+          const N = 12;
+          const animDur = (tEnd-tStart)/N;
+          for (let i = 0; i < N; i++) {
+            const t = i/(N-1);
+            const sz = interpolateSize(sizeStart, sizeEnd, t);
+            const animPenKey = `${style.fontname}|${sz}|${style.primaryColour}|${style.bold}|${style.italic}|${style.underline}`;
+            if (!(animPenKey in pens)) pens[animPenKey] = penId++;
+            const animPenIdx = pens[animPenKey];
+            dialogues.push({
+              start: (segStart + (tStart/1000) + (i*animDur)/1000).toFixed(3),
+              dur: (animDur/1000).toFixed(3),
+              text: seg.text,
+              style: Object.assign({}, style, {fontsize: sz}),
+              penIdx: animPenIdx,
+              wsIdx,
+              wpIdx,
               karaoke: false
             });
           }
@@ -387,14 +451,43 @@ function convertASS(assText) {
     ytt += `  <pen id="${id}" fc="${color}" sz="${parseInt(fontsize)*100}" b="${bold}" i="${italic}" u="${underline}" fo="255" bo="0" et="3" ec="#000000" />\n`;
   });
   ytt += `</head>\n<body>\n`;
-  // Output <p> for each dialogue
-  dialogues.forEach((d, i) => {
-    const escText = d.text
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;');
-    ytt += `  <p t="${Math.round(parseFloat(d.start) * 1000)}" d="${Math.round(parseFloat(d.dur) * 1000)}" p="${d.penIdx}" wp="${d.wpIdx}" ws="${d.wsIdx}">${escText}</p>\n`;
-  });
+  // Karaoke grouping: group consecutive karaoke: true into one <p> with <s>
+  let i = 0;
+  while (i < dialogues.length) {
+    const d = dialogues[i];
+    if (d.karaoke === true) {
+      // Group all consecutive karaoke:true with same start/dur/wp/ws
+      let j = i;
+      const group = [];
+      const pStart = d.start;
+      let pEnd = parseFloat(d.start) + parseFloat(d.dur);
+      const wpIdx = d.wpIdx, wsIdx = d.wsIdx;
+      while (j < dialogues.length && dialogues[j].karaoke === true && dialogues[j].wpIdx === wpIdx && dialogues[j].wsIdx === wsIdx) {
+        group.push(dialogues[j]);
+        pEnd = Math.max(pEnd, parseFloat(dialogues[j].start) + parseFloat(dialogues[j].dur));
+        j++;
+      }
+      // Output <p> with <s> for each suku kata
+      ytt += `  <p t="${Math.round(parseFloat(pStart) * 1000)}" d="${Math.round((pEnd-parseFloat(pStart)) * 1000)}" wp="${wpIdx}" ws="${wsIdx}">`;
+      group.forEach((g, idx) => {
+        const escText = g.text
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+        ytt += `<s p="${g.penIdx}">${escText}</s>`;
+        if (idx < group.length-1) ytt += '&#x200B;';
+      });
+      ytt += `</p>\n`;
+      i = j;
+    } else {
+      const escText = d.text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+      ytt += `  <p t="${Math.round(parseFloat(d.start) * 1000)}" d="${Math.round(parseFloat(d.dur) * 1000)}" p="${d.penIdx}" wp="${d.wpIdx}" ws="${d.wsIdx}">${escText}</p>\n`;
+      i++;
+    }
+  }
   ytt += `</body>\n</timedtext>`;
   return ytt;
 }
@@ -492,4 +585,18 @@ function toSeconds(timeStr) {
   const cs = m[4] ? parseInt(m[4]) : 0;
   
   return h * 3600 + mnt * 60 + s + cs/100;
+}
+
+// Tambahkan fungsi interpolasi warna
+function interpolateColor(color1, color2, t) {
+  // color1, color2: #RRGGBB
+  const c1 = [parseInt(color1.substr(1,2),16),parseInt(color1.substr(3,2),16),parseInt(color1.substr(5,2),16)];
+  const c2 = [parseInt(color2.substr(1,2),16),parseInt(color2.substr(3,2),16),parseInt(color2.substr(5,2),16)];
+  const c = c1.map((v,i)=>Math.round(v+(c2[i]-v)*t));
+  return `#${c[0].toString(16).padStart(2,'0')}${c[1].toString(16).padStart(2,'0')}${c[2].toString(16).padStart(2,'0')}`;
+}
+
+// Tambahkan fungsi interpolasi font size
+function interpolateSize(sz1, sz2, t) {
+  return Math.round(sz1 + (sz2 - sz1) * t);
 }
