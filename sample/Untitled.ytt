@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<timedtext format="3">
+   <head>
+      <wp id="0" ap="7" ah="50" av="100" />
+      <wp id="1" ap="7" ah="50" av="5" />
+      <wp id="2" ap="7" ah="22" av="15" />
+      <wp id="3" ap="7" ah="24" av="17" />
+      <wp id="4" ap="7" ah="26" av="18" />
+      <wp id="5" ap="7" ah="28" av="20" />
+      <wp id="6" ap="7" ah="29" av="22" />
+      <wp id="7" ap="7" ah="31" av="24" />
+      <wp id="8" ap="7" ah="33" av="26" />
+      <wp id="9" ap="7" ah="35" av="27" />
+      <wp id="10" ap="7" ah="36" av="29" />
+      <wp id="11" ap="7" ah="38" av="31" />
+      <wp id="12" ap="7" ah="40" av="33" />
+      <wp id="13" ap="7" ah="42" av="34" />
+      <wp id="14" ap="7" ah="43" av="36" />
+      <wp id="15" ap="7" ah="45" av="38" />
+      <wp id="16" ap="7" ah="47" av="40" />
+      <wp id="17" ap="7" ah="49" av="42" />
+      <wp id="18" ap="7" ah="50" av="43" />
+      <wp id="19" ap="7" ah="52" av="45" />
+      <wp id="20" ap="7" ah="54" av="47" />
+      <wp id="21" ap="7" ah="56" av="49" />
+      <wp id="22" ap="7" ah="58" av="51" />
+      <wp id="23" ap="7" ah="59" av="52" />
+      <wp id="24" ap="7" ah="61" av="54" />
+      <wp id="25" ap="7" ah="63" av="56" />
+      <wp id="26" ap="7" ah="65" av="58" />
+      <wp id="27" ap="7" ah="66" av="60" />
+      <wp id="28" ap="7" ah="68" av="61" />
+      <wp id="29" ap="7" ah="70" av="63" />
+      <wp id="30" ap="7" ah="72" av="65" />
+      <wp id="31" ap="7" ah="73" av="67" />
+      <wp id="32" ap="7" ah="50" av="99" />
+      <wp id="33" ap="7" ah="50" av="96" />
+      <wp id="34" ap="7" ah="50" av="93" />
+      <wp id="35" ap="7" ah="50" av="90" />
+      <wp id="36" ap="7" ah="50" av="86" />
+      <wp id="37" ap="7" ah="50" av="83" />
+      <wp id="38" ap="7" ah="50" av="80" />
+      <wp id="39" ap="7" ah="50" av="77" />
+      <wp id="40" ap="7" ah="50" av="74" />
+      <wp id="41" ap="7" ah="50" av="71" />
+      <wp id="42" ap="7" ah="50" av="68" />
+      <wp id="43" ap="7" ah="50" av="64" />
+      <wp id="44" ap="7" ah="50" av="61" />
+      <wp id="45" ap="7" ah="50" av="58" />
+      <wp id="46" ap="7" ah="50" av="55" />
+      <wp id="47" ap="7" ah="50" av="52" />
+      <wp id="48" ap="7" ah="50" av="49" />
+      <wp id="49" ap="7" ah="50" av="46" />
+      <wp id="50" ap="7" ah="50" av="42" />
+      <wp id="51" ap="7" ah="50" av="39" />
+      <wp id="52" ap="7" ah="50" av="36" />
+      <wp id="53" ap="7" ah="50" av="33" />
+      <wp id="54" ap="7" ah="50" av="30" />
+      <wp id="55" ap="7" ah="50" av="27" />
+      <wp id="56" ap="7" ah="50" av="24" />
+      <wp id="57" ap="7" ah="50" av="20" />
+      <wp id="58" ap="7" ah="50" av="17" />
+      <wp id="59" ap="7" ah="50" av="14" />
+      <wp id="60" ap="7" ah="50" av="11" />
+      <wp id="61" ap="7" ah="50" av="8" />
+      <wp id="62" ap="7" ah="49" av="100" />
+      <wp id="63" ap="7" ah="48" av="100" />
+      <wp id="64" ap="7" ah="49" av="100" />
+      <wp id="65" ap="7" ah="49" av="100" />
+      <wp id="66" ap="7" ah="49" av="100" />
+      <wp id="67" ap="7" ah="50" av="100" />
+      <wp id="68" ap="7" ah="49" av="100" />
+      <wp id="69" ap="7" ah="50" av="100" />
+      <wp id="70" ap="7" ah="50" av="100" />
+      <wp id="71" ap="7" ah="50" av="100" />
+      <wp id="72" ap="7" ah="49" av="98" />
+      <wp id="73" ap="7" ah="50" av="100" />
+      <wp id="74" ap="7" ah="50" av="98" />
+      <wp id="75" ap="7" ah="49" av="98" />
+      <wp id="76" ap="7" ah="50" av="99" />
+      <wp id="77" ap="7" ah="50" av="99" />
+      <wp id="78" ap="7" ah="50" av="98" />
+      <wp id="79" ap="7" ah="49" av="99" />
+      <wp id="80" ap="7" ah="49" av="100" />
+      <wp id="81" ap="7" ah="49" av="98" />
+      <wp id="82" ap="7" ah="50" av="100" />
+      <wp id="83" ap="7" ah="50" av="100" />
+      <wp id="84" ap="7" ah="49" av="98" />
+      <wp id="85" ap="7" ah="49" av="99" />
+      <wp id="86" ap="7" ah="49" av="100" />
+      <wp id="87" ap="7" ah="49" av="100" />
+      <wp id="88" ap="7" ah="50" av="100" />
+      <wp id="89" ap="7" ah="49" av="98" />
+      <wp id="90" ap="7" ah="51" av="99" />
+      <wp id="91" ap="7" ah="50" av="100" />
+      <wp id="92" ap="7" ah="50" av="100" />
+      <wp id="93" ap="7" ah="49" av="100" />
+      <wp id="94" ap="7" ah="50" av="100" />
+      <wp id="95" ap="7" ah="49" av="100" />
+      <wp id="96" ap="7" ah="50" av="100" />
+      <wp id="97" ap="7" ah="49" av="100" />
+      <wp id="98" ap="7" ah="50" av="100" />
+      <wp id="99" ap="7" ah="49" av="100" />
+      <wp id="100" ap="6" ah="0" av="100" />
+      <wp id="101" ap="7" ah="50" av="97" />
+      <wp id="102" ap="7" ah="10" av="41" />
+      <wp id="103" ap="7" ah="25" av="66" />
+      <wp id="104" ap="7" ah="43" av="48" />
+      <wp id="105" ap="7" ah="56" av="55" />
+      <wp id="106" ap="7" ah="68" av="100" />
+      <wp id="107" ap="7" ah="89" av="67" />
+      <wp id="108" ap="7" ah="88" av="66" />
+      <wp id="109" ap="7" ah="89" av="64" />
+      <wp id="110" ap="7" ah="88" av="67" />
+      <wp id="111" ap="7" ah="89" av="65" />
+      <wp id="112" ap="7" ah="89" av="64" />
+      <wp id="113" ap="7" ah="89" av="66" />
+      <wp id="114" ap="7" ah="88" av="64" />
+      <wp id="115" ap="7" ah="88" av="65" />
+      <wp id="116" ap="7" ah="89" av="66" />
+      <wp id="117" ap="7" ah="87" av="66" />
+      <wp id="118" ap="7" ah="89" av="66" />
+      <wp id="119" ap="7" ah="88" av="66" />
+      <wp id="120" ap="7" ah="89" av="65" />
+      <wp id="121" ap="7" ah="88" av="64" />
+      <wp id="122" ap="7" ah="87" av="64" />
+      <wp id="123" ap="7" ah="88" av="63" />
+      <wp id="124" ap="7" ah="89" av="63" />
+      <wp id="125" ap="7" ah="89" av="66" />
+      <wp id="126" ap="7" ah="87" av="65" />
+      <wp id="127" ap="7" ah="88" av="64" />
+      <wp id="128" ap="7" ah="89" av="64" />
+      <wp id="129" ap="7" ah="89" av="64" />
+      <wp id="130" ap="7" ah="89" av="64" />
+      <wp id="131" ap="7" ah="89" av="63" />
+      <wp id="132" ap="7" ah="89" av="63" />
+      <wp id="133" ap="7" ah="89" av="65" />
+      <wp id="134" ap="7" ah="88" av="67" />
+      <wp id="135" ap="7" ah="88" av="66" />
+      <wp id="136" ap="7" ah="88" av="65" />
+      <wp id="137" ap="8" ah="0" av="0" />
+      <ws id="0" ju="2" pd="0" sd="0" />
+      <ws id="1" ju="2" pd="2" sd="0" />
+      <ws id="2" ju="0" pd="0" sd="0" />
+      <ws id="3" ju="1" pd="0" sd="0" />
+      <pen id="0" sz="100" b="1" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="1" sz="100" b="1" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="2" sz="100" i="1" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="3" sz="100" i="1" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="4" sz="100" u="1" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="5" sz="100" u="1" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="6" fs="2" sz="100" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="7" fs="2" sz="100" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="8" sz="600" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="9" sz="600" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="10" sz="100" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="11" sz="100" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="12" sz="100" fc="#FF0000" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="13" sz="100" fc="#FF0000" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="14" sz="300" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="15" sz="300" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="16" sz="100" fc="#FF00FF" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="17" sz="100" fc="#FF00FF" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="18" sz="100" fc="#FFF600" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="19" sz="100" fc="#000000" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="20" sz="100" fc="#FFF600" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="21" sz="100" fc="#000000" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="22" sz="100" fc="#FFF600" fo="0" bc="#000000" bo="0" />
+      <pen id="23" sz="100" fc="#FEFEFE" fo="0" bc="#000000" bo="0" />
+      <pen id="24" sz="100" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#222222" />
+      <pen id="25" sz="100" fc="#FEFEFE" fo="42" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="26" sz="100" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#222222" />
+      <pen id="27" sz="100" fc="#FEFEFE" fo="127" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="28" sz="100" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#222222" />
+      <pen id="29" sz="100" fc="#FEFEFE" fo="212" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="30" sz="100" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#222222" />
+      <pen id="31" sz="100" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#222222" />
+      <pen id="32" sz="100" fc="#FEFEFE" fo="170" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="33" sz="100" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#222222" />
+      <pen id="34" sz="100" fc="#FEFEFE" fo="85" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="35" sz="100" fc="#000000" fo="0" bo="0" />
+      <pen id="36" sz="100" fc="#000000" fo="0" bc="#000000" bo="0" />
+      <pen id="37" sz="100" fc="#FF0000" fo="127" bo="0" />
+      <pen id="38" sz="100" fc="#00FF00" fo="127" bo="0" />
+      <pen id="39" sz="100" fc="#0000FF" fo="127" bo="0" />
+      <pen id="40" sz="100" fc="#000000" fo="0" bc="#000000" bo="0" />
+      <pen id="41" sz="100" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" hg="1" />
+      <pen id="42" sz="100" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" hg="1" />
+      <pen id="43" sz="100" of="0" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="44" sz="100" of="0" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="45" sz="100" of="2" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="46" sz="100" of="2" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="47" sz="100" fc="#1E8954" fo="255" bc="#FFFFFF" bo="254" et="4" ec="#E8E8E8" />
+      <pen id="48" sz="108" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="49" sz="108" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="50" sz="125" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="51" sz="125" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="52" sz="142" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="53" sz="142" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="54" sz="159" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="55" sz="159" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="56" sz="176" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="57" sz="176" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="58" sz="193" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="59" sz="193" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="60" sz="210" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="61" sz="210" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="62" sz="227" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="63" sz="227" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="64" sz="244" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="65" sz="244" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="66" sz="261" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="67" sz="261" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="68" sz="277" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="69" sz="277" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="70" sz="294" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="71" sz="294" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="72" sz="311" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="73" sz="311" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="74" sz="328" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="75" sz="328" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="76" sz="345" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="77" sz="345" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="78" sz="362" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="79" sz="362" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="80" sz="379" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="81" sz="379" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="82" sz="396" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="83" sz="396" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="84" sz="413" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="85" sz="413" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="86" sz="430" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="87" sz="430" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="88" sz="447" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="89" sz="447" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="90" sz="464" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="91" sz="464" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="92" sz="481" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="93" sz="481" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="94" sz="498" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="95" sz="498" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="96" sz="515" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="97" sz="515" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="98" sz="532" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="99" sz="532" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="100" sz="549" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="101" sz="549" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="102" sz="566" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="103" sz="566" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="104" sz="583" fc="#FEFEFE" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="105" sz="583" fc="#FEFEFE" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="106" sz="100" fc="#F3FF04" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="107" sz="100" fc="#F3FF04" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="108" sz="100" fc="#EBFF0C" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="109" sz="100" fc="#EBFF0C" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="110" sz="100" fc="#E3FE15" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="111" sz="100" fc="#E3FE15" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="112" sz="100" fc="#DAFD1E" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="113" sz="100" fc="#DAFD1E" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="114" sz="100" fc="#D2FD26" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="115" sz="100" fc="#D2FD26" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="116" sz="100" fc="#C9FC2F" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="117" sz="100" fc="#C9FC2F" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="118" sz="100" fc="#C1FC38" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="119" sz="100" fc="#C1FC38" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="120" sz="100" fc="#B9FB40" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="121" sz="100" fc="#B9FB40" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="122" sz="100" fc="#B0FA49" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="123" sz="100" fc="#B0FA49" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="124" sz="100" fc="#A8FA52" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="125" sz="100" fc="#A8FA52" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="126" sz="100" fc="#A0F95A" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="127" sz="100" fc="#A0F95A" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="128" sz="100" fc="#97F863" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="129" sz="100" fc="#97F863" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="130" sz="100" fc="#8FF86C" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="131" sz="100" fc="#8FF86C" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="132" sz="100" fc="#86F774" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="133" sz="100" fc="#86F774" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="134" sz="100" fc="#7EF77D" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="135" sz="100" fc="#7EF77D" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="136" sz="100" fc="#76F685" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="137" sz="100" fc="#76F685" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="138" sz="100" fc="#6DF58E" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="139" sz="100" fc="#6DF58E" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="140" sz="100" fc="#65F597" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="141" sz="100" fc="#65F597" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="142" sz="100" fc="#5DF49F" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="143" sz="100" fc="#5DF49F" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="144" sz="100" fc="#54F4A8" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="145" sz="100" fc="#54F4A8" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="146" sz="100" fc="#4CF3B1" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="147" sz="100" fc="#4CF3B1" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="148" sz="100" fc="#43F2B9" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="149" sz="100" fc="#43F2B9" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="150" sz="100" fc="#3BF2C2" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="151" sz="100" fc="#3BF2C2" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="152" sz="100" fc="#33F1CB" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="153" sz="100" fc="#33F1CB" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="154" sz="100" fc="#2AF1D3" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="155" sz="100" fc="#2AF1D3" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="156" sz="100" fc="#22F0DC" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="157" sz="100" fc="#22F0DC" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="158" sz="100" fc="#1AEFE5" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="159" sz="100" fc="#1AEFE5" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="160" sz="100" fc="#11EFED" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="161" sz="100" fc="#11EFED" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="162" sz="100" fc="#09EEF6" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="163" sz="100" fc="#09EEF6" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="164" sz="100" fc="#00EDFF" fo="0" bo="0" et="4" ec="#000000" />
+      <pen id="165" sz="100" fc="#00EDFF" fo="255" bc="#000000" bo="0" et="3" ec="#000000" />
+      <pen id="166" sz="100" i="1" fc="#000000" fo="1" bo="0" />
+   </head>
+   <body>
+      <p t="4946" d="1034" p="0" wp="0" ws="0">Bold text.​</p>
+      <p t="4946" d="1034" p="1" wp="0" ws="0">Bold text.​</p>
+      <p t="5980" d="1001" p="2" wp="0" ws="0">Italic text.​</p>
+      <p t="5980" d="1001" p="3" wp="0" ws="0">Italic text.​</p>
+      <p t="6981" d="1001" p="4" wp="0" ws="0">Underlined text.​</p>
+      <p t="6981" d="1001" p="5" wp="0" ws="0">Underlined text.​</p>
+      <p t="7982" d="1001" p="6" wp="0" ws="0">Times New Roman.​</p>
+      <p t="7982" d="1001" p="7" wp="0" ws="0">Times New Roman.​</p>
+      <p t="8983" d="1001" p="8" wp="0" ws="0">72px font size.​</p>
+      <p t="8983" d="1001" p="9" wp="0" ws="0">72px font size.​</p>
+      <p t="8983" d="1001" p="10" wp="1" ws="0">(Font size must be more than double the style's size to take affect.)​</p>
+      <p t="8983" d="1001" p="11" wp="1" ws="0">(Font size must be more than double the style's size to take affect.)​</p>
+      <p t="9984" d="67" p="10" wp="2" ws="0">Diagonally moving subtitles.​</p>
+      <p t="9984" d="67" p="11" wp="2" ws="0">Diagonally moving subtitles.​</p>
+      <p t="9984" d="2002" p="10" wp="0" ws="0">(Unfortunately, YouTube's subtitle FPS is very poor,
+         thus it is very jittery when it comes to movement.)​
+      </p>
+      <p t="9984" d="2002" p="11" wp="0" ws="0">(Unfortunately, YouTube's subtitle FPS is very poor,
+         thus it is very jittery when it comes to movement.)​
+      </p>
+      <p t="10051" d="66" p="10" wp="3" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10051" d="66" p="11" wp="3" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10117" d="67" p="10" wp="4" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10117" d="67" p="11" wp="4" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10184" d="67" p="10" wp="5" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10184" d="67" p="11" wp="5" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10251" d="67" p="10" wp="6" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10251" d="67" p="11" wp="6" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10318" d="66" p="10" wp="7" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10318" d="66" p="11" wp="7" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10384" d="67" p="10" wp="8" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10384" d="67" p="11" wp="8" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10451" d="67" p="10" wp="9" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10451" d="67" p="11" wp="9" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10518" d="66" p="10" wp="10" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10518" d="66" p="11" wp="10" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10584" d="67" p="10" wp="11" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10584" d="67" p="11" wp="11" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10651" d="67" p="10" wp="12" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10651" d="67" p="11" wp="12" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10718" d="67" p="10" wp="13" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10718" d="67" p="11" wp="13" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10785" d="66" p="10" wp="14" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10785" d="66" p="11" wp="14" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10851" d="67" p="10" wp="15" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10851" d="67" p="11" wp="15" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10918" d="67" p="10" wp="16" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10918" d="67" p="11" wp="16" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10985" d="67" p="10" wp="17" ws="0">Diagonally moving subtitles.​</p>
+      <p t="10985" d="67" p="11" wp="17" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11052" d="66" p="10" wp="18" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11052" d="66" p="11" wp="18" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11118" d="67" p="10" wp="19" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11118" d="67" p="11" wp="19" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11185" d="67" p="10" wp="20" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11185" d="67" p="11" wp="20" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11252" d="67" p="10" wp="21" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11252" d="67" p="11" wp="21" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11319" d="66" p="10" wp="22" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11319" d="66" p="11" wp="22" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11385" d="67" p="10" wp="23" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11385" d="67" p="11" wp="23" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11452" d="67" p="10" wp="24" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11452" d="67" p="11" wp="24" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11519" d="66" p="10" wp="25" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11519" d="66" p="11" wp="25" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11585" d="67" p="10" wp="26" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11585" d="67" p="11" wp="26" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11652" d="67" p="10" wp="27" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11652" d="67" p="11" wp="27" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11719" d="67" p="10" wp="28" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11719" d="67" p="11" wp="28" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11786" d="66" p="10" wp="29" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11786" d="66" p="11" wp="29" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11852" d="67" p="10" wp="30" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11852" d="67" p="11" wp="30" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11919" d="67" p="10" wp="31" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11919" d="67" p="11" wp="31" ws="0">Diagonally moving subtitles.​</p>
+      <p t="11986" d="2002" p="12" wp="0" ws="0">Red font.​</p>
+      <p t="11986" d="2002" p="13" wp="0" ws="0">Red font.​</p>
+      <p t="13988" d="67" p="14" wp="32" ws="0">48px font size, with vertical movement.​</p>
+      <p t="13988" d="67" p="15" wp="32" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14055" d="66" p="14" wp="33" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14055" d="66" p="15" wp="33" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14121" d="67" p="14" wp="34" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14121" d="67" p="15" wp="34" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14188" d="67" p="14" wp="35" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14188" d="67" p="15" wp="35" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14255" d="67" p="14" wp="36" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14255" d="67" p="15" wp="36" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14322" d="66" p="14" wp="37" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14322" d="66" p="15" wp="37" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14388" d="67" p="14" wp="38" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14388" d="67" p="15" wp="38" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14455" d="67" p="14" wp="39" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14455" d="67" p="15" wp="39" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14522" d="66" p="14" wp="40" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14522" d="66" p="15" wp="40" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14588" d="67" p="14" wp="41" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14588" d="67" p="15" wp="41" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14655" d="67" p="14" wp="42" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14655" d="67" p="15" wp="42" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14722" d="67" p="14" wp="43" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14722" d="67" p="15" wp="43" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14789" d="66" p="14" wp="44" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14789" d="66" p="15" wp="44" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14855" d="67" p="14" wp="45" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14855" d="67" p="15" wp="45" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14922" d="67" p="14" wp="46" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14922" d="67" p="15" wp="46" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14989" d="67" p="14" wp="47" ws="0">48px font size, with vertical movement.​</p>
+      <p t="14989" d="67" p="15" wp="47" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15056" d="66" p="14" wp="48" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15056" d="66" p="15" wp="48" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15122" d="67" p="14" wp="49" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15122" d="67" p="15" wp="49" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15189" d="67" p="14" wp="50" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15189" d="67" p="15" wp="50" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15256" d="67" p="14" wp="51" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15256" d="67" p="15" wp="51" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15323" d="66" p="14" wp="52" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15323" d="66" p="15" wp="52" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15389" d="67" p="14" wp="53" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15389" d="67" p="15" wp="53" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15456" d="67" p="14" wp="54" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15456" d="67" p="15" wp="54" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15523" d="66" p="14" wp="55" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15523" d="66" p="15" wp="55" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15589" d="67" p="14" wp="56" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15589" d="67" p="15" wp="56" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15656" d="67" p="14" wp="57" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15656" d="67" p="15" wp="57" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15723" d="67" p="14" wp="58" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15723" d="67" p="15" wp="58" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15790" d="66" p="14" wp="59" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15790" d="66" p="15" wp="59" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15856" d="67" p="14" wp="60" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15856" d="67" p="15" wp="60" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15923" d="67" p="14" wp="61" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15923" d="67" p="15" wp="61" ws="0">48px font size, with vertical movement.​</p>
+      <p t="15990" d="1001" p="16" wp="0" ws="0">Secondary style with preset configuration.​</p>
+      <p t="15990" d="1001" p="17" wp="0" ws="0">Secondary style with preset configuration.​</p>
+      <p t="16991" d="200" wp="0" ws="0"><s p="18">Ba​</s>&#x200B;<s p="19">sic karaoke timing.​</s></p>
+      <p t="16991" d="200" wp="0" ws="0"><s p="20">Ba​</s>&#x200B;<s p="21">sic karaoke timing.​</s></p>
+      <p t="16991" d="200" wp="0" ws="0"><s p="22">Ba​</s>&#x200B;<s p="23">sic karaoke timing.​</s></p>
+      <p t="17191" d="367" wp="0" ws="0"><s p="18">Basic ​</s>&#x200B;<s p="19">karaoke timing.​</s></p>
+      <p t="17191" d="367" wp="0" ws="0"><s p="20">Basic ​</s>&#x200B;<s p="21">karaoke timing.​</s></p>
+      <p t="17191" d="367" wp="0" ws="0"><s p="22">Basic ​</s>&#x200B;<s p="23">karaoke timing.​</s></p>
+      <p t="17558" d="200" wp="0" ws="0"><s p="18">Basic ka​</s>&#x200B;<s p="19">raoke timing.​</s></p>
+      <p t="17558" d="200" wp="0" ws="0"><s p="20">Basic ka​</s>&#x200B;<s p="21">raoke timing.​</s></p>
+      <p t="17558" d="200" wp="0" ws="0"><s p="22">Basic ka​</s>&#x200B;<s p="23">raoke timing.​</s></p>
+      <p t="17758" d="201" wp="0" ws="0"><s p="18">Basic kara​</s>&#x200B;<s p="19">oke timing.​</s></p>
+      <p t="17758" d="201" wp="0" ws="0"><s p="20">Basic kara​</s>&#x200B;<s p="21">oke timing.​</s></p>
+      <p t="17758" d="201" wp="0" ws="0"><s p="22">Basic kara​</s>&#x200B;<s p="23">oke timing.​</s></p>
+      <p t="17959" d="66" wp="0" ws="0"><s p="18">Basic karao​</s>&#x200B;<s p="19">ke timing.​</s></p>
+      <p t="17959" d="66" wp="0" ws="0"><s p="20">Basic karao​</s>&#x200B;<s p="21">ke timing.​</s></p>
+      <p t="17959" d="66" wp="0" ws="0"><s p="22">Basic karao​</s>&#x200B;<s p="23">ke timing.​</s></p>
+      <p t="18025" d="301" wp="0" ws="0"><s p="18">Basic karaoke ​</s>&#x200B;<s p="19">timing.​</s></p>
+      <p t="18025" d="301" wp="0" ws="0"><s p="20">Basic karaoke ​</s>&#x200B;<s p="21">timing.​</s></p>
+      <p t="18025" d="301" wp="0" ws="0"><s p="22">Basic karaoke ​</s>&#x200B;<s p="23">timing.​</s></p>
+      <p t="18326" d="200" wp="0" ws="0"><s p="18">Basic karaoke ti​</s>&#x200B;<s p="19">ming.​</s></p>
+      <p t="18326" d="200" wp="0" ws="0"><s p="20">Basic karaoke ti​</s>&#x200B;<s p="21">ming.​</s></p>
+      <p t="18326" d="200" wp="0" ws="0"><s p="22">Basic karaoke ti​</s>&#x200B;<s p="23">ming.​</s></p>
+      <p t="18526" d="467" p="18" wp="0" ws="0">Basic karaoke timing.​</p>
+      <p t="18526" d="467" p="20" wp="0" ws="0">Basic karaoke timing.​</p>
+      <p t="18993" d="67" p="24" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="18993" d="67" p="25" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="19060" d="66" p="26" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="19060" d="66" p="27" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="19126" d="100" p="28" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="19126" d="100" p="29" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="19226" d="2570" p="30" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="19226" d="2570" p="11" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="21796" d="66" p="31" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="21796" d="66" p="32" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="21862" d="67" p="33" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="21862" d="67" p="34" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="21929" d="67" p="35" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="21929" d="67" p="36" wp="0" ws="0">Basic fade with 200ms in/out.​</p>
+      <p t="21996" d="2002" p="10" wp="0" ws="1">Vertical text. This gets interesting.​</p>
+      <p t="21996" d="2002" p="11" wp="0" ws="1">Vertical text. This gets interesting.​</p>
+      <p t="23998" d="67" p="10" wp="62" ws="0">Shaking subtitles.​</p>
+      <p t="23998" d="67" p="11" wp="62" ws="0">Shaking subtitles.​</p>
+      <p t="24065" d="66" p="10" wp="63" ws="0">Shaking subtitles.​</p>
+      <p t="24065" d="66" p="11" wp="63" ws="0">Shaking subtitles.​</p>
+      <p t="24131" d="67" p="10" wp="64" ws="0">Shaking subtitles.​</p>
+      <p t="24131" d="67" p="11" wp="64" ws="0">Shaking subtitles.​</p>
+      <p t="24198" d="67" p="10" wp="65" ws="0">Shaking subtitles.​</p>
+      <p t="24198" d="67" p="11" wp="65" ws="0">Shaking subtitles.​</p>
+      <p t="24265" d="67" p="10" wp="66" ws="0">Shaking subtitles.​</p>
+      <p t="24265" d="67" p="11" wp="66" ws="0">Shaking subtitles.​</p>
+      <p t="24332" d="66" p="10" wp="67" ws="0">Shaking subtitles.​</p>
+      <p t="24332" d="66" p="11" wp="67" ws="0">Shaking subtitles.​</p>
+      <p t="24398" d="67" p="10" wp="68" ws="0">Shaking subtitles.​</p>
+      <p t="24398" d="67" p="11" wp="68" ws="0">Shaking subtitles.​</p>
+      <p t="24465" d="67" p="10" wp="69" ws="0">Shaking subtitles.​</p>
+      <p t="24465" d="67" p="11" wp="69" ws="0">Shaking subtitles.​</p>
+      <p t="24532" d="66" p="10" wp="70" ws="0">Shaking subtitles.​</p>
+      <p t="24532" d="66" p="11" wp="70" ws="0">Shaking subtitles.​</p>
+      <p t="24598" d="67" p="10" wp="71" ws="0">Shaking subtitles.​</p>
+      <p t="24598" d="67" p="11" wp="71" ws="0">Shaking subtitles.​</p>
+      <p t="24665" d="67" p="10" wp="72" ws="0">Shaking subtitles.​</p>
+      <p t="24665" d="67" p="11" wp="72" ws="0">Shaking subtitles.​</p>
+      <p t="24732" d="67" p="10" wp="73" ws="0">Shaking subtitles.​</p>
+      <p t="24732" d="67" p="11" wp="73" ws="0">Shaking subtitles.​</p>
+      <p t="24799" d="66" p="10" wp="74" ws="0">Shaking subtitles.​</p>
+      <p t="24799" d="66" p="11" wp="74" ws="0">Shaking subtitles.​</p>
+      <p t="24865" d="67" p="10" wp="75" ws="0">Shaking subtitles.​</p>
+      <p t="24865" d="67" p="11" wp="75" ws="0">Shaking subtitles.​</p>
+      <p t="24932" d="67" p="10" wp="76" ws="0">Shaking subtitles.​</p>
+      <p t="24932" d="67" p="11" wp="76" ws="0">Shaking subtitles.​</p>
+      <p t="24999" d="67" p="10" wp="77" ws="0">Shaking subtitles.​</p>
+      <p t="24999" d="67" p="11" wp="77" ws="0">Shaking subtitles.​</p>
+      <p t="25066" d="66" p="10" wp="78" ws="0">Shaking subtitles.​</p>
+      <p t="25066" d="66" p="11" wp="78" ws="0">Shaking subtitles.​</p>
+      <p t="25132" d="67" p="10" wp="79" ws="0">Shaking subtitles.​</p>
+      <p t="25132" d="67" p="11" wp="79" ws="0">Shaking subtitles.​</p>
+      <p t="25199" d="67" p="10" wp="80" ws="0">Shaking subtitles.​</p>
+      <p t="25199" d="67" p="11" wp="80" ws="0">Shaking subtitles.​</p>
+      <p t="25266" d="67" p="10" wp="81" ws="0">Shaking subtitles.​</p>
+      <p t="25266" d="67" p="11" wp="81" ws="0">Shaking subtitles.​</p>
+      <p t="25333" d="66" p="10" wp="82" ws="0">Shaking subtitles.​</p>
+      <p t="25333" d="66" p="11" wp="82" ws="0">Shaking subtitles.​</p>
+      <p t="25399" d="67" p="10" wp="83" ws="0">Shaking subtitles.​</p>
+      <p t="25399" d="67" p="11" wp="83" ws="0">Shaking subtitles.​</p>
+      <p t="25466" d="67" p="10" wp="84" ws="0">Shaking subtitles.​</p>
+      <p t="25466" d="67" p="11" wp="84" ws="0">Shaking subtitles.​</p>
+      <p t="25533" d="66" p="10" wp="85" ws="0">Shaking subtitles.​</p>
+      <p t="25533" d="66" p="11" wp="85" ws="0">Shaking subtitles.​</p>
+      <p t="25599" d="67" p="10" wp="86" ws="0">Shaking subtitles.​</p>
+      <p t="25599" d="67" p="11" wp="86" ws="0">Shaking subtitles.​</p>
+      <p t="25666" d="67" p="10" wp="87" ws="0">Shaking subtitles.​</p>
+      <p t="25666" d="67" p="11" wp="87" ws="0">Shaking subtitles.​</p>
+      <p t="25733" d="67" p="10" wp="88" ws="0">Shaking subtitles.​</p>
+      <p t="25733" d="67" p="11" wp="88" ws="0">Shaking subtitles.​</p>
+      <p t="25800" d="66" p="10" wp="89" ws="0">Shaking subtitles.​</p>
+      <p t="25800" d="66" p="11" wp="89" ws="0">Shaking subtitles.​</p>
+      <p t="25866" d="67" p="10" wp="90" ws="0">Shaking subtitles.​</p>
+      <p t="25866" d="67" p="11" wp="90" ws="0">Shaking subtitles.​</p>
+      <p t="25933" d="67" p="10" wp="91" ws="0">Shaking subtitles.​</p>
+      <p t="25933" d="67" p="11" wp="91" ws="0">Shaking subtitles.​</p>
+      <p t="26000" d="67" p="37" wp="92" ws="0">Chromatic aberration.​</p>
+      <p t="26000" d="67" p="38" wp="91" ws="0">Chromatic aberration.​</p>
+      <p t="26000" d="67" p="39" wp="93" ws="0">Chromatic aberration.​</p>
+      <p t="26067" d="66" p="37" wp="94" ws="0">Chromatic aberration.​</p>
+      <p t="26067" d="66" p="38" wp="91" ws="0">Chromatic aberration.​</p>
+      <p t="26067" d="66" p="39" wp="95" ws="0">Chromatic aberration.​</p>
+      <p t="26133" d="67" p="37" wp="96" ws="0">Chromatic aberration.​</p>
+      <p t="26133" d="67" p="38" wp="91" ws="0">Chromatic aberration.​</p>
+      <p t="26133" d="67" p="39" wp="97" ws="0">Chromatic aberration.​</p>
+      <p t="26200" d="67" p="37" wp="98" ws="0">Chromatic aberration.​</p>
+      <p t="26200" d="67" p="38" wp="91" ws="0">Chromatic aberration.​</p>
+      <p t="26200" d="67" p="39" wp="99" ws="0">Chromatic aberration.​</p>
+      <p t="26267" d="1435" p="10" wp="0" ws="0">Chromatic aberration.​</p>
+      <p t="26267" d="1435" p="11" wp="0" ws="0">Chromatic aberration.​</p>
+      <p t="27702" d="66" p="37" wp="98" ws="0">Chromatic aberration.​</p>
+      <p t="27702" d="66" p="38" wp="91" ws="0">Chromatic aberration.​</p>
+      <p t="27702" d="66" p="39" wp="99" ws="0">Chromatic aberration.​</p>
+      <p t="27768" d="67" p="37" wp="96" ws="0">Chromatic aberration.​</p>
+      <p t="27768" d="67" p="38" wp="91" ws="0">Chromatic aberration.​</p>
+      <p t="27768" d="67" p="39" wp="97" ws="0">Chromatic aberration.​</p>
+      <p t="27835" d="67" p="37" wp="94" ws="0">Chromatic aberration.​</p>
+      <p t="27835" d="67" p="38" wp="91" ws="0">Chromatic aberration.​</p>
+      <p t="27835" d="67" p="39" wp="95" ws="0">Chromatic aberration.​</p>
+      <p t="27902" d="100" p="37" wp="92" ws="0">Chromatic aberration.​</p>
+      <p t="27902" d="100" p="38" wp="91" ws="0">Chromatic aberration.​</p>
+      <p t="27902" d="100" p="39" wp="93" ws="0">Chromatic aberration.​</p>
+      <p t="28002" d="100" wp="100" ws="2"><s p="10">S​</s>&#x200B;<s p="40">tching karaoke for your viewing pleasure.​</s></p>
+      <p t="28002" d="100" wp="100" ws="2"><s p="11">S​</s>&#x200B;<s p="40">tching karaoke for your viewing pleasure.​</s></p>
+      <p t="28102" d="33" wp="100" ws="2"><s p="10">Gli​</s>&#x200B;<s p="40">tching karaoke for your viewing pleasure.​</s></p>
+      <p t="28102" d="33" wp="100" ws="2"><s p="11">Gli​</s>&#x200B;<s p="40">tching karaoke for your viewing pleasure.​</s></p>
+      <p t="28135" d="100" wp="100" ws="2"><s p="10">Glis​</s>&#x200B;<s p="40">karaoke for your viewing pleasure.​</s></p>
+      <p t="28135" d="100" wp="100" ws="2"><s p="11">Glis​</s>&#x200B;<s p="40">karaoke for your viewing pleasure.​</s></p>
+      <p t="28235" d="234" wp="100" ws="2"><s p="10">Glitching ​</s>&#x200B;<s p="40">karaoke for your viewing pleasure.​</s></p>
+      <p t="28235" d="234" wp="100" ws="2"><s p="11">Glitching ​</s>&#x200B;<s p="40">karaoke for your viewing pleasure.​</s></p>
+      <p t="28469" d="67" wp="100" ws="2"><s p="10">Glitching ka​</s>&#x200B;<s p="40">raoke for your viewing pleasure.​</s></p>
+      <p t="28469" d="67" wp="100" ws="2"><s p="11">Glitching ka​</s>&#x200B;<s p="40">raoke for your viewing pleasure.​</s></p>
+      <p t="28536" d="100" wp="100" ws="2"><s p="10">Glitching kaK​</s>&#x200B;<s p="40">oke for your viewing pleasure.​</s></p>
+      <p t="28536" d="100" wp="100" ws="2"><s p="11">Glitching kaK​</s>&#x200B;<s p="40">oke for your viewing pleasure.​</s></p>
+      <p t="28636" d="33" wp="100" ws="2"><s p="10">Glitching karao​</s>&#x200B;<s p="40">ke for your viewing pleasure.​</s></p>
+      <p t="28636" d="33" wp="100" ws="2"><s p="11">Glitching karao​</s>&#x200B;<s p="40">ke for your viewing pleasure.​</s></p>
+      <p t="28669" d="100" wp="100" ws="2"><s p="10">Glitching karaoL​</s>&#x200B;<s p="40">for your viewing pleasure.​</s></p>
+      <p t="28669" d="100" wp="100" ws="2"><s p="11">Glitching karaoL​</s>&#x200B;<s p="40">for your viewing pleasure.​</s></p>
+      <p t="28769" d="34" wp="100" ws="2"><s p="10">Glitching karaoke ​</s>&#x200B;<s p="40">for your viewing pleasure.​</s></p>
+      <p t="28769" d="34" wp="100" ws="2"><s p="11">Glitching karaoke ​</s>&#x200B;<s p="40">for your viewing pleasure.​</s></p>
+      <p t="28803" d="100" wp="100" ws="2"><s p="10">Glitching karaoke S​</s>&#x200B;<s p="40">your viewing pleasure.​</s></p>
+      <p t="28803" d="100" wp="100" ws="2"><s p="11">Glitching karaoke S​</s>&#x200B;<s p="40">your viewing pleasure.​</s></p>
+      <p t="28903" d="100" wp="100" ws="2"><s p="10">Glitching karaoke for ​</s>&#x200B;<s p="40">your viewing pleasure.​</s></p>
+      <p t="28903" d="100" wp="100" ws="2"><s p="11">Glitching karaoke for ​</s>&#x200B;<s p="40">your viewing pleasure.​</s></p>
+      <p t="29003" d="100" wp="100" ws="2"><s p="10">Glitching karaoke for l​</s>&#x200B;<s p="40">viewing pleasure.​</s></p>
+      <p t="29003" d="100" wp="100" ws="2"><s p="11">Glitching karaoke for l​</s>&#x200B;<s p="40">viewing pleasure.​</s></p>
+      <p t="29103" d="133" wp="100" ws="2"><s p="10">Glitching karaoke for your ​</s>&#x200B;<s p="40">viewing pleasure.​</s></p>
+      <p t="29103" d="133" wp="100" ws="2"><s p="11">Glitching karaoke for your ​</s>&#x200B;<s p="40">viewing pleasure.​</s></p>
+      <p t="29236" d="101" wp="100" ws="2"><s p="10">Glitching karaoke for your u​</s>&#x200B;<s p="40">ing pleasure.​</s></p>
+      <p t="29236" d="101" wp="100" ws="2"><s p="11">Glitching karaoke for your u​</s>&#x200B;<s p="40">ing pleasure.​</s></p>
+      <p t="29337" d="66" wp="100" ws="2"><s p="10">Glitching karaoke for your view​</s>&#x200B;<s p="40">ing pleasure.​</s></p>
+      <p t="29337" d="66" wp="100" ws="2"><s p="11">Glitching karaoke for your view​</s>&#x200B;<s p="40">ing pleasure.​</s></p>
+      <p t="29403" d="100" wp="100" ws="2"><s p="10">Glitching karaoke for your viewu​</s>&#x200B;<s p="40">pleasure.​</s></p>
+      <p t="29403" d="100" wp="100" ws="2"><s p="11">Glitching karaoke for your viewu​</s>&#x200B;<s p="40">pleasure.​</s></p>
+      <p t="29503" d="100" wp="100" ws="2"><s p="10">Glitching karaoke for your viewing ​</s>&#x200B;<s p="40">pleasure.​</s></p>
+      <p t="29503" d="100" wp="100" ws="2"><s p="11">Glitching karaoke for your viewing ​</s>&#x200B;<s p="40">pleasure.​</s></p>
+      <p t="29603" d="101" wp="100" ws="2"><s p="10">Glitching karaoke for your viewing M​</s>&#x200B;<s p="40">sure.​</s></p>
+      <p t="29603" d="101" wp="100" ws="2"><s p="11">Glitching karaoke for your viewing M​</s>&#x200B;<s p="40">sure.​</s></p>
+      <p t="29704" d="66" wp="100" ws="2"><s p="10">Glitching karaoke for your viewing plea​</s>&#x200B;<s p="40">sure.​</s></p>
+      <p t="29704" d="66" wp="100" ws="2"><s p="11">Glitching karaoke for your viewing plea​</s>&#x200B;<s p="40">sure.​</s></p>
+      <p t="29770" d="100" p="10" wp="100" ws="2">Glitching karaoke for your viewing pleam​</p>
+      <p t="29770" d="100" p="11" wp="100" ws="2">Glitching karaoke for your viewing pleam​</p>
+      <p t="29870" d="101" p="10" wp="100" ws="2">Glitching karaoke for your viewing pleasure.​</p>
+      <p t="29870" d="101" p="11" wp="100" ws="2">Glitching karaoke for your viewing pleasure.​</p>
+      <p t="29971" d="2002" p="10" wp="0" ws="0">Packed text.​</p>
+      <p t="29971" d="2002" p="11" wp="0" ws="0">Packed text.​</p>
+      <p t="29971" d="2002" p="41" wp="101" ws="1">Packed text.​</p>
+      <p t="29971" d="2002" p="42" wp="101" ws="1">Packed text.​</p>
+      <p t="31973" d="2002" p="10" wp="102" ws="0">Many​</p>
+      <p t="31973" d="2002" p="11" wp="102" ws="0">Many​</p>
+      <p t="31973" d="2002" p="14" wp="103" ws="0">subtitles​</p>
+      <p t="31973" d="2002" p="15" wp="103" ws="0">subtitles​</p>
+      <p t="31973" d="2002" p="10" wp="104" ws="0">all​</p>
+      <p t="31973" d="2002" p="11" wp="104" ws="0">all​</p>
+      <p t="31973" d="2002" p="8" wp="105" ws="0">at​</p>
+      <p t="31973" d="2002" p="9" wp="105" ws="0">at​</p>
+      <p t="31973" d="2002" p="0" wp="106" ws="0">once!​</p>
+      <p t="31973" d="2002" p="1" wp="106" ws="0">once!​</p>
+      <p t="31973" d="66" p="6" wp="107" ws="0">!!!​</p>
+      <p t="31973" d="66" p="7" wp="107" ws="0">!!!​</p>
+      <p t="32039" d="67" p="6" wp="108" ws="0">!!!​</p>
+      <p t="32039" d="67" p="7" wp="108" ws="0">!!!​</p>
+      <p t="32106" d="67" p="6" wp="109" ws="0">!!!​</p>
+      <p t="32106" d="67" p="7" wp="109" ws="0">!!!​</p>
+      <p t="32173" d="66" p="6" wp="110" ws="0">!!!​</p>
+      <p t="32173" d="66" p="7" wp="110" ws="0">!!!​</p>
+      <p t="32239" d="67" p="6" wp="111" ws="0">!!!​</p>
+      <p t="32239" d="67" p="7" wp="111" ws="0">!!!​</p>
+      <p t="32306" d="67" p="6" wp="112" ws="0">!!!​</p>
+      <p t="32306" d="67" p="7" wp="112" ws="0">!!!​</p>
+      <p t="32373" d="67" p="6" wp="113" ws="0">!!!​</p>
+      <p t="32373" d="67" p="7" wp="113" ws="0">!!!​</p>
+      <p t="32440" d="66" p="6" wp="114" ws="0">!!!​</p>
+      <p t="32440" d="66" p="7" wp="114" ws="0">!!!​</p>
+      <p t="32506" d="67" p="6" wp="115" ws="0">!!!​</p>
+      <p t="32506" d="67" p="7" wp="115" ws="0">!!!​</p>
+      <p t="32573" d="67" p="6" wp="116" ws="0">!!!​</p>
+      <p t="32573" d="67" p="7" wp="116" ws="0">!!!​</p>
+      <p t="32640" d="67" p="6" wp="117" ws="0">!!!​</p>
+      <p t="32640" d="67" p="7" wp="117" ws="0">!!!​</p>
+      <p t="32707" d="66" p="6" wp="118" ws="0">!!!​</p>
+      <p t="32707" d="66" p="7" wp="118" ws="0">!!!​</p>
+      <p t="32773" d="67" p="6" wp="119" ws="0">!!!​</p>
+      <p t="32773" d="67" p="7" wp="119" ws="0">!!!​</p>
+      <p t="32840" d="67" p="6" wp="120" ws="0">!!!​</p>
+      <p t="32840" d="67" p="7" wp="120" ws="0">!!!​</p>
+      <p t="32907" d="67" p="6" wp="121" ws="0">!!!​</p>
+      <p t="32907" d="67" p="7" wp="121" ws="0">!!!​</p>
+      <p t="32974" d="66" p="6" wp="122" ws="0">!!!​</p>
+      <p t="32974" d="66" p="7" wp="122" ws="0">!!!​</p>
+      <p t="33040" d="67" p="6" wp="123" ws="0">!!!​</p>
+      <p t="33040" d="67" p="7" wp="123" ws="0">!!!​</p>
+      <p t="33107" d="67" p="6" wp="124" ws="0">!!!​</p>
+      <p t="33107" d="67" p="7" wp="124" ws="0">!!!​</p>
+      <p t="33174" d="66" p="6" wp="125" ws="0">!!!​</p>
+      <p t="33174" d="66" p="7" wp="125" ws="0">!!!​</p>
+      <p t="33240" d="67" p="6" wp="126" ws="0">!!!​</p>
+      <p t="33240" d="67" p="7" wp="126" ws="0">!!!​</p>
+      <p t="33307" d="67" p="6" wp="127" ws="0">!!!​</p>
+      <p t="33307" d="67" p="7" wp="127" ws="0">!!!​</p>
+      <p t="33374" d="67" p="6" wp="128" ws="0">!!!​</p>
+      <p t="33374" d="67" p="7" wp="128" ws="0">!!!​</p>
+      <p t="33441" d="66" p="6" wp="129" ws="0">!!!​</p>
+      <p t="33441" d="66" p="7" wp="129" ws="0">!!!​</p>
+      <p t="33507" d="67" p="6" wp="130" ws="0">!!!​</p>
+      <p t="33507" d="67" p="7" wp="130" ws="0">!!!​</p>
+      <p t="33574" d="67" p="6" wp="131" ws="0">!!!​</p>
+      <p t="33574" d="67" p="7" wp="131" ws="0">!!!​</p>
+      <p t="33641" d="67" p="6" wp="132" ws="0">!!!​</p>
+      <p t="33641" d="67" p="7" wp="132" ws="0">!!!​</p>
+      <p t="33708" d="66" p="6" wp="133" ws="0">!!!​</p>
+      <p t="33708" d="66" p="7" wp="133" ws="0">!!!​</p>
+      <p t="33774" d="67" p="6" wp="134" ws="0">!!!​</p>
+      <p t="33774" d="67" p="7" wp="134" ws="0">!!!​</p>
+      <p t="33841" d="67" p="6" wp="135" ws="0">!!!​</p>
+      <p t="33841" d="67" p="7" wp="135" ws="0">!!!​</p>
+      <p t="33908" d="67" p="6" wp="136" ws="0">!!!​</p>
+      <p t="33908" d="67" p="7" wp="136" ws="0">!!!​</p>
+      <p t="33975" d="1001" p="43" wp="0" ws="0">Subscript text.​</p>
+      <p t="33975" d="1001" p="44" wp="0" ws="0">Subscript text.​</p>
+      <p t="34976" d="1001" p="45" wp="0" ws="0">Superscript text.​</p>
+      <p t="34976" d="1001" p="46" wp="0" ws="0">Superscript text.​</p>
+      <p t="35977" d="2002" p="47" wp="0" ws="0">Custom text background and colour.​</p>
+      <p t="37979" d="2002" p="10" wp="0" ws="0">Unfortunately, there is no rotation/rotation animation
+         that is available to be used at the moment.​
+      </p>
+      <p t="37979" d="2002" p="11" wp="0" ws="0">Unfortunately, there is no rotation/rotation animation
+         that is available to be used at the moment.​
+      </p>
+      <p t="39981" d="4004" p="10" wp="0" ws="0">You will have to live with unicode upside-down characters.​</p>
+      <p t="39981" d="4004" p="11" wp="0" ws="0">You will have to live with unicode upside-down characters.​</p>
+      <p t="43985" d="66" p="48" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="43985" d="66" p="49" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44051" d="67" p="50" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44051" d="67" p="51" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44118" d="67" p="52" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44118" d="67" p="53" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44185" d="66" p="54" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44185" d="66" p="55" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44251" d="67" p="56" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44251" d="67" p="57" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44318" d="67" p="58" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44318" d="67" p="59" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44385" d="67" p="60" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44385" d="67" p="61" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44452" d="66" p="62" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44452" d="66" p="63" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44518" d="67" p="64" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44518" d="67" p="65" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44585" d="67" p="66" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44585" d="67" p="67" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44652" d="67" p="68" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44652" d="67" p="69" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44719" d="66" p="70" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44719" d="66" p="71" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44785" d="67" p="72" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44785" d="67" p="73" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44852" d="67" p="74" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44852" d="67" p="75" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44919" d="67" p="76" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44919" d="67" p="77" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44986" d="66" p="78" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="44986" d="66" p="79" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45052" d="67" p="80" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45052" d="67" p="81" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45119" d="67" p="82" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45119" d="67" p="83" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45186" d="66" p="84" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45186" d="66" p="85" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45252" d="67" p="86" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45252" d="67" p="87" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45319" d="67" p="88" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45319" d="67" p="89" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45386" d="67" p="90" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45386" d="67" p="91" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45453" d="66" p="92" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45453" d="66" p="93" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45519" d="67" p="94" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45519" d="67" p="95" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45586" d="67" p="96" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45586" d="67" p="97" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45653" d="67" p="98" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45653" d="67" p="99" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45720" d="66" p="100" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45720" d="66" p="101" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45786" d="67" p="102" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45786" d="67" p="103" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45853" d="67" p="104" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45853" d="67" p="105" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45920" d="67" p="8" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45920" d="67" p="9" wp="0" ws="0">Gradual font size increase to 72px.​</p>
+      <p t="45987" d="66" p="106" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="45987" d="66" p="107" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46053" d="67" p="108" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46053" d="67" p="109" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46120" d="67" p="110" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46120" d="67" p="111" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46187" d="66" p="112" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46187" d="66" p="113" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46253" d="67" p="114" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46253" d="67" p="115" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46320" d="67" p="116" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46320" d="67" p="117" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46387" d="67" p="118" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46387" d="67" p="119" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46454" d="66" p="120" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46454" d="66" p="121" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46520" d="67" p="122" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46520" d="67" p="123" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46587" d="67" p="124" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46587" d="67" p="125" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46654" d="67" p="126" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46654" d="67" p="127" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46721" d="66" p="128" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46721" d="66" p="129" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46787" d="67" p="130" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46787" d="67" p="131" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46854" d="67" p="132" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46854" d="67" p="133" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46921" d="67" p="134" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46921" d="67" p="135" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46988" d="66" p="136" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="46988" d="66" p="137" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47054" d="67" p="138" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47054" d="67" p="139" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47121" d="67" p="140" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47121" d="67" p="141" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47188" d="66" p="142" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47188" d="66" p="143" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47254" d="67" p="144" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47254" d="67" p="145" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47321" d="67" p="146" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47321" d="67" p="147" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47388" d="67" p="148" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47388" d="67" p="149" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47455" d="66" p="150" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47455" d="66" p="151" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47521" d="67" p="152" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47521" d="67" p="153" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47588" d="67" p="154" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47588" d="67" p="155" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47655" d="67" p="156" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47655" d="67" p="157" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47722" d="66" p="158" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47722" d="66" p="159" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47788" d="67" p="160" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47788" d="67" p="161" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47855" d="67" p="162" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47855" d="67" p="163" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47922" d="67" p="164" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47922" d="67" p="165" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.​</p>
+      <p t="47989" d="3001" p="10" wp="0" ws="0">Can't think of anything else to display. Hope this helped!
+         .ASS and .VTT files are available to download in desc.​
+      </p>
+      <p t="47989" d="3001" p="11" wp="0" ws="0">Can't think of anything else to display. Hope this helped!
+         .ASS and .VTT files are available to download in desc.​
+      </p>
+      <p t="1" d="99" p="166" wp="137" ws="3">​​</p>
+   </body>
+</timedtext>
