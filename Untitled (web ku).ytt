@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<timedtext format="3">
+<head>
+  <wp id="0" ap="7" ah="50" av="7" />
+  <wp id="1" ap="7" ah="23" av="16" />
+  <wp id="2" ap="7" ah="50" av="99" />
+  <wp id="3" ap="7" ah="50" av="95" />
+  <wp id="4" ap="7" ah="12" av="42" />
+  <wp id="5" ap="7" ah="27" av="66" />
+  <wp id="6" ap="7" ah="43" av="48" />
+  <wp id="7" ap="7" ah="56" av="55" />
+  <wp id="8" ap="7" ah="67" av="100" />
+  <wp id="9" ap="7" ah="87" av="65" />
+  <ws id="1" ju="0" pd="0" sd="0" />
+  <ws id="0" ju="1" pd="0" sd="0" />
+  <pen id="0" fc="#FFFF00" sz="3200" b="1" i="0" u="0" fo="255" bo="0" et="3" ec="#000000" />
+  <pen id="1" fc="#FFFF00" sz="3200" b="0" i="1" u="0" fo="255" bo="0" et="3" ec="#000000" />
+  <pen id="2" fc="#FFFF00" sz="3200" b="0" i="0" u="1" fo="255" bo="0" et="3" ec="#000000" />
+  <pen id="3" fc="#FFFF00" sz="3200" b="0" i="0" u="0" fo="255" bo="0" et="3" ec="#000000" />
+  <pen id="4" fc="#FFFF00" sz="7200" b="0" i="0" u="0" fo="255" bo="0" et="3" ec="#000000" />
+  <pen id="5" fc="#FFFF00" sz="3200" b="0" i="0" u="0" fo="255" bo="0" et="3" ec="#000000" />
+  <pen id="6" fc="#FF0000" sz="3200" b="0" i="0" u="0" fo="255" bo="0" et="3" ec="#000000" />
+  <pen id="7" fc="#FFFF00" sz="4800" b="0" i="0" u="0" fo="255" bo="0" et="3" ec="#000000" />
+  <pen id="8" fc="#00FF00" sz="2000" b="0" i="0" u="0" fo="255" bo="0" et="3" ec="#000000" />
+  <pen id="9" fc="#FFF600" sz="3200" b="0" i="0" u="0" fo="255" bo="0" et="3" ec="#000000" />
+  <pen id="10" fc="#895400" sz="2000" b="0" i="0" u="0" fo="255" bo="0" et="3" ec="#000000" />
+</head>
+<body>
+  <p t="4980" d="1040" p="0" wp="0" ws="0">Bold text.</p>
+  <p t="6020" d="1000" p="1" wp="0" ws="0">Italic text.</p>
+  <p t="7020" d="1000" p="2" wp="0" ws="0">Underlined text.</p>
+  <p t="8020" d="1000" p="3" wp="0" ws="0">Times New Roman.</p>
+  <p t="9020" d="1000" p="4" wp="0" ws="0">72px font size.</p>
+  <p t="9020" d="1000" p="5" wp="0" ws="0">(Font size must be more than double the style's size to take affect.)</p>
+  <p t="10020" d="2000" p="5" wp="1" ws="0">Diagonally moving subtitles.</p>
+  <p t="10020" d="2000" p="5" wp="0" ws="0">(Unfortunately, YouTube's subtitle FPS is very poor,\Nthus it is very jittery when it comes to movement.)</p>
+  <p t="12020" d="2000" p="6" wp="0" ws="0">Red font.</p>
+  <p t="14020" d="2000" p="7" wp="2" ws="0">48px font size, with vertical movement.</p>
+  <p t="16020" d="1010" p="8" wp="0" ws="0">Secondary style with preset configuration.</p>
+  <p t="17030" d="190" p="9" wp="0" ws="0">Basic karaoke timing.</p>
+  <p t="19030" d="3000" p="5" wp="0" ws="0">Basic fade with 200ms in/out.</p>
+  <p t="22030" d="2000" p="5" wp="0" ws="0">Vertical text. This gets interesting.</p>
+  <p t="24030" d="2000" p="5" wp="0" ws="0">Shaking subtitles.</p>
+  <p t="26030" d="2000" p="5" wp="0" ws="0">Chromatic aberration.</p>
+  <p t="28030" d="130" p="5" wp="0" ws="1">Glitching karaoke for your viewing pleasure.</p>
+  <p t="30030" d="2000" p="5" wp="0" ws="0">Packed text.</p>
+  <p t="30030" d="2000" p="5" wp="3" ws="0">Packed text.</p>
+  <p t="32030" d="2000" p="5" wp="4" ws="0">Many</p>
+  <p t="32030" d="2000" p="7" wp="5" ws="0">subtitles</p>
+  <p t="32030" d="2000" p="5" wp="6" ws="0">all</p>
+  <p t="32030" d="2000" p="4" wp="7" ws="0">at</p>
+  <p t="32030" d="2000" p="0" wp="8" ws="0">once!</p>
+  <p t="32030" d="2000" p="3" wp="9" ws="0">!!!</p>
+  <p t="34030" d="980" p="5" wp="0" ws="0">Subscript text.</p>
+  <p t="35010" d="1000" p="5" wp="0" ws="0">Superscript text.</p>
+  <p t="36010" d="2000" p="10" wp="0" ws="0">Custom text background and colour.</p>
+  <p t="38010" d="2000" p="5" wp="0" ws="0">Unfortunately, there is no rotation/rotation animation\Nthat is available to be used at the moment.</p>
+  <p t="40010" d="4010" p="5" wp="0" ws="0">You will have to live with unicode upside-down characters.</p>
+  <p t="44020" d="2000" p="4" wp="0" ws="0">Gradual font size increase to 72px.</p>
+  <p t="46020" d="2000" p="5" wp="0" ws="0">Yellow subtitles fading to cyan in a 2000ms timespan.</p>
+  <p t="48020" d="3010" p="5" wp="0" ws="0">Can't think of anything else to display. Hope this helped!\N.ASS and .VTT files are available to download in desc.</p>
+</body>
+</timedtext>

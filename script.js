@@ -67,6 +67,31 @@ function convertASS(assText) {
   const lines = assText.split(/\r?\n/);
   const dialogues = [];
   const styles = {};
+  const pens = {};
+  const windowPositions = {};
+  const windowStyles = {};
+  let wpId = 0;
+  let wsId = 0;
+  let penId = 0;
+
+  // Helper for ytchroma colors
+  const chromaColors = [
+    '#FF0000', // Red
+    '#00FF00', // Green
+    '#0000FF', // Blue
+    '#FFFF00', // Yellow
+    '#00FFFF', // Cyan
+    '#FF00FF', // Magenta
+    '#FFFFFF', // White
+  ];
+
+  // Helper for ytshake offsets
+  function getShakeOffset(i) {
+    // Simple shake pattern, can be randomized for more effect
+    const dx = [0, 2, -2, 1, -1, 0, 2, -2][i % 8];
+    const dy = [0, 1, -1, 2, -2, 0, 1, -1][i % 8];
+    return { dx, dy };
+  }
 
   // Parse styles section
   let inStylesSection = false;
@@ -99,121 +124,277 @@ function convertASS(assText) {
       const styleName = parts[3]?.trim() || 'Default';
       const effect = parts[8]?.trim() || '';
       let text = parts.slice(9).join(',').trim();
-      
-      // Parse ASS tags
-      const assTags = parseASSTags(text);
-      text = text.replace(/\{.*?\}/g, '').trim();
-
       const startSec = toSeconds(start);
       const endSec = toSeconds(end);
       const dur = (endSec - startSec).toFixed(3);
-
-      // Get style or use default
-      const style = styles[styleName] || {
-        fontname: 'Arial',
-        fontsize: 16,
-        primaryColour: '#FFFFFF',
-        bold: 0,
-        italic: 0,
-        underline: 0,
-        alignment: 2
-      };
-
-      // Apply inline tags to override style
-      if (assTags.bold !== undefined) style.bold = assTags.bold;
-      if (assTags.italic !== undefined) style.italic = assTags.italic;
-      if (assTags.underline !== undefined) style.underline = assTags.underline;
-      if (assTags.color) style.primaryColour = assTags.color;
-      if (assTags.fontname) style.fontname = assTags.fontname;
-      if (assTags.fontsize) style.fontsize = assTags.fontsize;
-
-      dialogues.push({ 
-        start: startSec.toFixed(3), 
-        dur, 
-        text,
-        style,
-        effect,
-        position: assTags.position,
-        movement: assTags.movement,
-        karaoke: assTags.karaoke,
-        fade: assTags.fade,
-
-        // Tambahkan posisi window berdasarkan pos atau move
-        if (position) {
-          const posKey = `${position.x},${position.y}`;
-          if (!windowPositions[posKey]) {
-            windowPositions[posKey] = wpId++;
-          }
-        },
-        if (movement) {
-          const moveKey = `${movement.x1},${movement.y1},${movement.x2},${movement.y2}`;
-          if (!windowPositions[moveKey]) {
-            windowPositions[moveKey] = wpId++;
-          }
+      // Pecah per segmen {tag}text
+      const segs = [];
+      let lastIdx = 0;
+      const tagRegex = /\{([^}]*)\}/g;
+      let m;
+      while ((m = tagRegex.exec(text)) !== null) {
+        if (m.index > lastIdx) {
+          // Text sebelum tag
+          segs.push({ tags: '', text: text.substring(lastIdx, m.index) });
         }
-
+        // Tag dan text setelahnya
+        const nextTagEnd = tagRegex.lastIndex;
+        // Cari text setelah tag sampai tag berikutnya atau akhir
+        const nextTagStart = tagRegex.exec(text)?.index ?? text.length;
+        tagRegex.lastIndex = nextTagEnd; // reset
+        const segText = text.substring(nextTagEnd, nextTagStart).split('{')[0];
+        segs.push({ tags: m[1], text: segText });
+        lastIdx = nextTagEnd + segText.length;
+      }
+      if (lastIdx < text.length) {
+        segs.push({ tags: '', text: text.substring(lastIdx) });
+      }
+      // Untuk setiap segmen, deteksi tag experimental
+      let segStart = startSec;
+      let segDur = (endSec - startSec) / segs.length;
+      segs.forEach((seg, idx) => {
+        if (!seg.text.trim()) return;
+        const assTags = parseASSTags('{' + seg.tags + '}');
+        const style = Object.assign({}, styles[styleName] || {
+          fontname: 'Arial',
+          fontsize: 16,
+          primaryColour: '#FFFFFF',
+          bold: 0,
+          italic: 0,
+          underline: 0,
+          alignment: 2
+        });
+        // Inline tag override
+        if (assTags.bold !== undefined) style.bold = assTags.bold;
+        if (assTags.italic !== undefined) style.italic = assTags.italic;
+        if (assTags.underline !== undefined) style.underline = assTags.underline;
+        if (assTags.color) style.primaryColour = assTags.color;
+        if (assTags.fontname) style.fontname = assTags.fontname;
+        if (assTags.fontsize) style.fontsize = assTags.fontsize;
+        // Pen id for this style
+        const penKey = `${style.fontname}|${style.fontsize}|${style.primaryColour}|${style.bold}|${style.italic}|${style.underline}`;
+        if (!(penKey in pens)) pens[penKey] = penId++;
+        const penIdx = pens[penKey];
+        // Window style id (alignment)
+        const wsKey = `${style.alignment}`;
+        if (!(wsKey in windowStyles)) windowStyles[wsKey] = wsId++;
+        const wsIdx = windowStyles[wsKey];
+        // Window position id
+        let wpIdx = 0;
+        if (assTags.position) {
+          const posKey = `${assTags.position.x},${assTags.position.y}`;
+          if (!(posKey in windowPositions)) windowPositions[posKey] = wpId++;
+          wpIdx = windowPositions[posKey];
+        } else if (assTags.movement) {
+          const moveKey = `${assTags.movement.x1},${assTags.movement.y1},${assTags.movement.x2},${assTags.movement.y2}`;
+          if (!(moveKey in windowPositions)) windowPositions[moveKey] = wpId++;
+          wpIdx = windowPositions[moveKey];
+        }
+        // Tag experimental
+        if (seg.tags.includes('ytchroma')) {
+          // Bagi durasi segmen menjadi N bagian, tiap bagian warna berbeda
+          const N = chromaColors.length;
+          const chromaDur = (segDur * 1000) / N;
+          for (let i = 0; i < N; i++) {
+            const chromaPenKey = `${style.fontname}|${style.fontsize}|${chromaColors[i]}|${style.bold}|${style.italic}|${style.underline}`;
+            if (!(chromaPenKey in pens)) pens[chromaPenKey] = penId++;
+            const chromaPenIdx = pens[chromaPenKey];
+            dialogues.push({
+              start: (segStart + (i * chromaDur) / 1000).toFixed(3),
+              dur: (chromaDur / 1000).toFixed(3),
+              text: seg.text,
+              style,
+              penIdx: chromaPenIdx,
+              wsIdx,
+              wpIdx,
+              karaoke: false
+            });
+          }
+        } else if (seg.tags.includes('ytshake')) {
+          // Bagi durasi segmen menjadi N bagian, tiap bagian posisi berbeda
+          const N = 8;
+          const shakeDur = (segDur * 1000) / N;
+          for (let i = 0; i < N; i++) {
+            const { dx, dy } = getShakeOffset(i);
+            let shakePos = { x: 960 + dx * 5, y: 540 + dy * 5 };
+            if (assTags.position) {
+              shakePos = { x: assTags.position.x + dx * 5, y: assTags.position.y + dy * 5 };
+            }
+            const shakePosKey = `${shakePos.x},${shakePos.y}`;
+            if (!(shakePosKey in windowPositions)) windowPositions[shakePosKey] = wpId++;
+            const shakeWpIdx = windowPositions[shakePosKey];
+            dialogues.push({
+              start: (segStart + (i * shakeDur) / 1000).toFixed(3),
+              dur: (shakeDur / 1000).toFixed(3),
+              text: seg.text,
+              style,
+              penIdx,
+              wsIdx,
+              wpIdx: shakeWpIdx,
+              karaoke: false
+            });
+          }
+        } else if (seg.tags.includes('ytvert')) {
+          // Teks vertikal: per huruf, posisi Y naik
+          const baseX = assTags.position ? assTags.position.x : 960;
+          const baseY = assTags.position ? assTags.position.y : 540;
+          const stepY = 40; // Jarak antar huruf
+          const N = seg.text.length;
+          const vertDur = segDur / N;
+          for (let i = 0; i < N; i++) {
+            const vertPosKey = `${baseX},${baseY + i * stepY}`;
+            if (!(vertPosKey in windowPositions)) windowPositions[vertPosKey] = wpId++;
+            const vertWpIdx = windowPositions[vertPosKey];
+            dialogues.push({
+              start: (segStart + i * vertDur).toFixed(3),
+              dur: vertDur.toFixed(3),
+              text: seg.text[i],
+              style,
+              penIdx,
+              wsIdx,
+              wpIdx: vertWpIdx,
+              karaoke: false
+            });
+          }
+        } else if (seg.tags.includes('ytpack')) {
+          // Teks padat: per huruf, posisi X naik
+          const baseX = assTags.position ? assTags.position.x : 960;
+          const baseY = assTags.position ? assTags.position.y : 540;
+          const stepX = 30; // Jarak antar huruf
+          const N = seg.text.length;
+          const packDur = segDur / N;
+          for (let i = 0; i < N; i++) {
+            const packPosKey = `${baseX + i * stepX},${baseY}`;
+            if (!(packPosKey in windowPositions)) windowPositions[packPosKey] = wpId++;
+            const packWpIdx = windowPositions[packPosKey];
+            dialogues.push({
+              start: (segStart + i * packDur).toFixed(3),
+              dur: packDur.toFixed(3),
+              text: seg.text[i],
+              style,
+              penIdx,
+              wsIdx,
+              wpIdx: packWpIdx,
+              karaoke: false
+            });
+          }
+        } else if (seg.tags.includes('ytktGlitch')) {
+          // Efek glitch: per huruf, warna/posisi acak, timing sangat pendek
+          const baseX = assTags.position ? assTags.position.x : 960;
+          const baseY = assTags.position ? assTags.position.y : 540;
+          const N = seg.text.length;
+          const glitchSteps = 6;
+          const glitchDur = segDur / (N * glitchSteps);
+          for (let i = 0; i < N; i++) {
+            for (let j = 0; j < glitchSteps; j++) {
+              // Warna acak dari chromaColors
+              const color = chromaColors[Math.floor(Math.random() * chromaColors.length)];
+              const glitchPenKey = `${style.fontname}|${style.fontsize}|${color}|${style.bold}|${style.italic}|${style.underline}`;
+              if (!(glitchPenKey in pens)) pens[glitchPenKey] = penId++;
+              const glitchPenIdx = pens[glitchPenKey];
+              // Posisi acak
+              const dx = Math.floor(Math.random() * 20) - 10;
+              const dy = Math.floor(Math.random() * 20) - 10;
+              const glitchPosKey = `${baseX + i * 30 + dx},${baseY + dy}`;
+              if (!(glitchPosKey in windowPositions)) windowPositions[glitchPosKey] = wpId++;
+              const glitchWpIdx = windowPositions[glitchPosKey];
+              dialogues.push({
+                start: (segStart + (i * glitchSteps + j) * glitchDur).toFixed(3),
+                dur: glitchDur.toFixed(3),
+                text: seg.text[i],
+                style,
+                penIdx: glitchPenIdx,
+                wsIdx,
+                wpIdx: glitchWpIdx,
+                karaoke: false
+              });
+            }
+          }
+        } else if (seg.tags.includes('ytsub')) {
+          // Subscript: posisi Y digeser ke bawah
+          const baseX = assTags.position ? assTags.position.x : 960;
+          const baseY = (assTags.position ? assTags.position.y : 540) + 40;
+          const subPosKey = `${baseX},${baseY}`;
+          if (!(subPosKey in windowPositions)) windowPositions[subPosKey] = wpId++;
+          const subWpIdx = windowPositions[subPosKey];
+          dialogues.push({
+            start: (segStart).toFixed(3),
+            dur: segDur.toFixed(3),
+            text: seg.text,
+            style,
+            penIdx,
+            wsIdx,
+            wpIdx: subWpIdx,
+            karaoke: false
+          });
+        } else if (seg.tags.includes('ytsup')) {
+          // Superscript: posisi Y digeser ke atas
+          const baseX = assTags.position ? assTags.position.x : 960;
+          const baseY = (assTags.position ? assTags.position.y : 540) - 40;
+          const supPosKey = `${baseX},${baseY}`;
+          if (!(supPosKey in windowPositions)) windowPositions[supPosKey] = wpId++;
+          const supWpIdx = windowPositions[supPosKey];
+          dialogues.push({
+            start: (segStart).toFixed(3),
+            dur: segDur.toFixed(3),
+            text: seg.text,
+            style,
+            penIdx,
+            wsIdx,
+            wpIdx: supWpIdx,
+            karaoke: false
+          });
+        } else {
+          // Default: satu segmen saja
+          dialogues.push({
+            start: (segStart).toFixed(3),
+            dur: segDur.toFixed(3),
+            text: seg.text,
+            style,
+            penIdx,
+            wsIdx,
+            wpIdx,
+            karaoke: false
+          });
+        }
+        segStart += segDur;
       });
-     }
+    }
   });
 
   // Generate YTT with styles
   let ytt = `<?xml version="1.0" encoding="utf-8"?>\n<timedtext format="3">\n<head>\n`;
-  
-  // Add pen definitions for styles
-  Object.entries(styles).forEach(([name, style], i) => {
-    ytt += `  <pen id="${i}" fc="${style.primaryColour}" sz="${style.fontsize * 100}" `;
-    ytt += `b="${style.bold}" i="${style.italic}" u="${style.underline}" `;
-    ytt += `fo="255" bo="0" et="3" ec="#000000" />\n`;
-  });
-  
-  // Add default pens for overrides
-  ytt += `  <pen id="100" fc="#FFFFFF" sz="1600" b="1" i="0" u="0" fo="255" bo="0" et="3" ec="#000000" />\n`;
-  ytt += `  <pen id="101" fc="#FF0000" sz="1600" b="0" i="1" u="0" fo="255" bo="0" et="3" ec="#000000" />\n`;
-  ytt += `  <pen id="102" fc="#00FF00" sz="1600" b="0" i="0" u="1" fo="255" bo="0" et="3" ec="#000000" />\n`;
-  
-  ytt += `  <ws id="0" ju="0" pd="0" sd="0" />\n`;
-  ytt += `  <ws id="1" ju="1" pd="0" sd="0" />\n`;
-  ytt += `  <ws id="2" ju="2" pd="0" sd="0" />\n`;
-  ytt += `</head>\n<body>\n`;
-
+  // Generate <wp>
   Object.entries(windowPositions).forEach(([key, id]) => {
-  const coords = key.split(',').map(Number);
-  if (coords.length === 2) {
-    // Static position
-    ytt += `  <wp id="${id}" ap="7" ah="${Math.round(coords[0]/19.2)}" av="${Math.round(coords[1]/10.8)}" />\n`;
-  } else if (coords.length === 4) {
-    // Movement start position (belum support animasi gerak penuh)
-    ytt += `  <wp id="${id}" ap="7" ah="${Math.round(coords[0]/19.2)}" av="${Math.round(coords[1]/10.8)}" />\n`;
-  }
-});
-  
+    const coords = key.split(',').map(Number);
+    if (coords.length === 2) {
+      ytt += `  <wp id="${id}" ap="7" ah="${Math.round(coords[0]/19.2)}" av="${Math.round(coords[1]/10.8)}" />\n`;
+    } else if (coords.length === 4) {
+      ytt += `  <wp id="${id}" ap="7" ah="${Math.round(coords[0]/19.2)}" av="${Math.round(coords[1]/10.8)}" />\n`;
+    }
+  });
+  // Generate <ws>
+  Object.entries(windowStyles).forEach(([key, id]) => {
+    let ju = 2;
+    if (key === '1') ju = 0;
+    else if (key === '2') ju = 1;
+    else if (key === '3') ju = 2;
+    ytt += `  <ws id="${id}" ju="${ju}" pd="0" sd="0" />\n`;
+  });
+  // Generate <pen>
+  Object.entries(pens).forEach(([key, id]) => {
+    const [fontname, fontsize, color, bold, italic, underline] = key.split('|');
+    ytt += `  <pen id="${id}" fc="${color}" sz="${parseInt(fontsize)*100}" b="${bold}" i="${italic}" u="${underline}" fo="255" bo="0" et="3" ec="#000000" />\n`;
+  });
+  ytt += `</head>\n<body>\n`;
+  // Output <p> for each dialogue
   dialogues.forEach((d, i) => {
     const escText = d.text
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;');
-    
-    // Determine pen based on style
-    let penId = 0; // default
-    if (d.style.bold && !d.style.italic && !d.style.underline) penId = 100;
-    else if (!d.style.bold && d.style.italic && !d.style.underline) penId = 101;
-    else if (!d.style.bold && !d.style.italic && d.style.underline) penId = 102;
-    
-    // Determine alignment (1=left, 2=center, 3=right)
-    const wsId = d.style.alignment >= 1 && d.style.alignment <= 3 ? d.style.alignment - 1 : 1;
-    
-    ytt += `  <p t="${Math.round(parseFloat(d.start) * 1000)}" d="${Math.round(parseFloat(d.dur) * 1000)}" `;
-    
-    let wpKey = '0';
-    if (d.position) wpKey = `${d.position.x},${d.position.y}`;
-    else if (d.movement) wpKey = `${d.movement.x1},${d.movement.y1},${d.movement.x2},${d.movement.y2}`;
-    const wp = windowPositions[wpKey] ?? 0;
-
-    ytt += `  <p t="${Math.round(parseFloat(d.start) * 1000)}" d="${Math.round(parseFloat(d.dur) * 1000)}" `;
-    ytt += `p="${penId}" wp="${wp}" ws="${wsId}">${escText}</p>\n`;
-
+    ytt += `  <p t="${Math.round(parseFloat(d.start) * 1000)}" d="${Math.round(parseFloat(d.dur) * 1000)}" p="${d.penIdx}" wp="${d.wpIdx}" ws="${d.wsIdx}">${escText}</p>\n`;
   });
-  
   ytt += `</body>\n</timedtext>`;
   return ytt;
 }

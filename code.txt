@@ -1,0 +1,141 @@
+{\b1}
+{\i1}
+{\u1}
+{\fnTimes New Roman}
+{\fs72}
+{\pos(960,78)}
+{\move(441.333,170,1400,720)}
+{\c&H0000FF&}
+{\fs48}{\move(960,1070,960,107.333)}
+{\k19}{\2c&H000000&}{\c&H00F6FF&}
+{\k38}
+{\k19}
+{\k19}
+{\k9}
+{\k29}
+{\k19}
+{\k48}
+{\4c&H222222&}
+{\fad(200,200)}
+{\ytvert}
+{\ytshake}
+{\ytchroma}
+{\k13}
+{\2c&H0000FF&}{\2a&HFF&}
+{\ytktGlitch}
+{\k32}
+{\k9}
+{\k9}
+{\k4}
+{\k14}
+{\k18}
+{\k23}
+{\k18}
+{\k19}
+{\k18}
+{\k23}
+{\ytvert}{\pos(960,1027.333)}
+{\ytpack}
+{\pos(226.667,448.667)}
+{\pos(512,710)}
+{\fs48}
+{\pos(832,523.334)}
+{\pos(1080,598)}
+{\fs72}
+{\pos(1293.333,1075.334)}
+{\b1}
+{\fnTimes New Roman}{\ytshake}{\pos(1677.334,702)}
+{\ytsub}
+{\ytsup}
+{\t(\fs72)}
+{\1c&H00FFF7&}{\t(0,2000,\1c&HFFED00&)}
+
+Bold text.
+
+Italic text.
+
+Underlined text.
+
+Times New Roman.
+
+72px font size.
+
+(Font size must be more than double the style's size to take affect.)
+
+Diagonally moving subtitles.
+
+Red font.
+
+48px font size, with vertical movement.
+
+Ba
+
+sic
+
+ka
+
+ra
+
+o
+
+ke
+
+ti
+
+ming.
+
+Basic fade with 200ms in/out.
+
+Vertical text. This gets interesting.
+
+Shaking subtitles.
+
+Chromatic aberration.
+
+Gli
+
+tching
+
+ka
+
+ra
+
+o
+
+ke
+
+for
+
+your
+
+view
+
+ing
+
+plea
+
+sure.
+
+Packed text.
+
+Packed text.
+
+Many
+
+subtitles
+
+all
+
+at
+
+once!
+
+!!!
+
+Subscript text.
+
+Superscript text.
+
+Gradual font size increase to 72px.
+
+Yellow subtitles fading to cyan in a 2000ms timespan.
